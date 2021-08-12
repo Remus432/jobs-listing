@@ -1,0 +1,64 @@
+.job
+  background: #fff
+  box-shadow: 0 10px 10px rgba($bg-color, .2)
+  border-radius: 5px
+  position: relative
+  margin: 4rem 0
+  padding: 2rem
+  padding-top: 3rem
+  position: relative
+
+  &__tags
+    display: grid
+    grid-template-columns: repeat(3, min-content)
+    grid-gap: 1rem
+    margin-top: 2rem
+
+.job__post
+  &-logo
+    position: absolute
+    top: -2rem
+    width: 40px
+
+  &-type
+    align-items: center
+    display: flex
+    margin-bottom: 1rem
+
+  &-headline
+    font-size: 2rem
+
+  &-info 
+    margin: 1rem 0
+    border-bottom: 1px solid $light-grayish-cyan
+    padding: 1.5rem 0
+
+    & span
+      color: $light-grayish-cyan
+      margin-right: 2rem
+      position: relative
+
+      &:nth-of-type(2)::before
+        @include circleSpan
+        left: -1.25rem
+
+      &:nth-of-type(2)::after
+        @include circleSpan
+        right: -1.25rem
+    
+  &-new
+    @include jobLabel($bg-color)
+
+  &-featured
+    @include jobLabel($very-dark-grayish-cyan)
+
+  &-company
+    color: $bg-color
+    font-weight: bold
+    margin-right: 2rem
+
+  
+
+      
+        
+    
